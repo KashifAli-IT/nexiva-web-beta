@@ -1,0 +1,373 @@
+body{
+   /* font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    */
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    background-color: aquamarine ;
+    padding: 0;
+    margin: 0;
+
+}
+/*globel*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.button{
+    height: 38px;
+    background:rgb(33, 227, 162);
+    border-radius: 5em;
+}
+header{
+    background:#00ffcc ;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid;
+    position:fixed;
+    width: 100%; /* Ensure the header spans the full width */
+     /* Position at the top */
+    z-index: 1000; 
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding{
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+ header nav{
+    float: right;
+    margin-top:10px; 
+ }
+ header .highlight, header .current a{
+    color: rgb(32, 176, 92);
+    font-weight: bold;
+ }
+ header a:hover{
+    color:#168972;
+    font-weight: bold;
+ }
+ #home {
+    position: relative; /* Positioning context for the pseudo-element */
+    min-height: 400px;
+    background: url('./images/showcase.webp') no-repeat center center;
+    background-size: cover;
+    text-align:center;
+    color: azure;
+    overflow: hidden; /* Prevents overflow from the pseudo-element */
+}
+
+#home::before {
+    content: ''; /* Required for the pseudo-element */
+    position: absolute; /* Position it relative to the #showcase */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure it sits above the background but below text */
+}
+
+#home h1, #home p {
+    position: relative; /* Position text above the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+}
+ #home h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+ }
+ #home p{
+    font-size: 20px;
+ }
+ 
+.home-section {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 60px;
+    background: url('background-image.jpg') no-repeat center center/cover; /* Add a background image */
+    color: #ffffff;
+}
+
+
+
+.home-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.home-content h2 {
+    font-size: 2em;
+    color: #00ffcc;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #00ff99;
+}
+ #newsletter{
+    padding: 15px;
+    color: white;
+    background:#00ffcc ;
+}
+#newsletter h1{
+    float:left
+}
+#newsletter form{
+    float: right;
+    margin-top: 22px;
+}
+#newsnetter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+#about {
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-text h3 {
+    margin-top: 20px;
+    color: #00ffcc;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.icon {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icon i {
+    color: #00ffcc;
+    margin-right: 10px;
+}
+
+#projects {
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: 15px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px); /* Adjust width and spacing */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    color: #00ffcc;
+}
+
+.project-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #00ffcc;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #00ff99;
+}
+
+.tools ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tools ul li {
+    margin: 10px;
+}
+
+.tools ul li::before {
+    content: '\2713';
+    font-size: 18px;
+    color: #00ffcc;
+    margin-right: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+li:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0.8;
+}
+li {
+    transition: transform 0.3s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+#contact {
+    padding: 40px;
+    color: #00ffcc;
+    background-color: #1a1a1a;
+}
+
+.contact-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box input[type="text"],
+.contact-box input[type="email"],
+.contact-box textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box button[type="submit"] {
+    background-color: #00ffcc;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-box button[type="submit"]:hover {
+    background-color: #00ff99;
+}
+
+.contact-info {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.contact-info a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
