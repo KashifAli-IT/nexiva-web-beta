@@ -81,7 +81,5 @@ Contributions are welcome! If you'd like to improve the project, please follow t
 
 For more information, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **GitHub**: [Your GitHub Profile](https://github.com/yourprofile)
+- **Email**: [arainkas60@gmail.com](arainkas60@gmail.com)
 
