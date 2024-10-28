@@ -27,9 +27,9 @@ ul{
 }
 header{
     background:#00ffcc ;
-    color: white;
+    color:  rgb(27, 150, 140);
     padding-top: 30px;
-    min-height: 70px;
+    min-height: 50px;
     border-bottom: 3px solid;
     position:fixed;
     width: 100%; /* Ensure the header spans the full width */
@@ -37,10 +37,11 @@ header{
     z-index: 1000; 
 }
 header a{
-    color: white;
+    color:  rgb(16, 154, 179);
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase; 
+   margin: auto;
 }
 header ul{
     margin: 0;
@@ -77,6 +78,7 @@ header #branding h1 {
     text-align:center;
     color: azure;
     overflow: hidden; /* Prevents overflow from the pseudo-element */
+    justify-content: center;
 }
 
 #home::before {
@@ -127,6 +129,8 @@ header #branding h1 {
 .home-content h2 {
     font-size: 2em;
     color: #00ffcc;
+    position: relative;
+    z-index: 2;
 }
 
 .cta-button {
@@ -139,6 +143,8 @@ header #branding h1 {
     text-decoration: none;
     font-size: 1.2em;
     transition: background-color 0.3s;
+    position: relative;
+    z-index: 2;
 }
 
 .cta-button:hover {
@@ -146,7 +152,7 @@ header #branding h1 {
 }
  #newsletter{
     padding: 15px;
-    color: white;
+    color: rgb(27, 150, 140);
     background:#00ffcc ;
 }
 #newsletter h1{
@@ -370,4 +376,7 @@ li:hover {
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+footer{
+    text-align: center;
 }
