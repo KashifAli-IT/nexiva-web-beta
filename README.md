@@ -1,5 +1,3 @@
-# responcive-web
-
 # Nexiva Web Design
 
 Welcome to **Nexiva Web Design** — a creative and innovative web development project specializing in AI integration. This repository hosts the source code for a portfolio website that showcases web development skills, projects, and tools used by our team.
